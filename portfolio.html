@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/media.css">
 </head>
 <body>
     <header class="header">
@@ -23,11 +24,70 @@
     </ul>
 </nav>
 <address class="header-address">
-    <ul class="header-list list">
-    <li class="header-item"><a class="header-contact link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-    <li class="header-item"><a class="header-contact link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+    <ul class="header-list adress-colons list">
+    <li class="header-item colons"><a class="header-contact link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+    <li class="header-item colons"><a class="header-contact link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
     </ul>
 </address>
+<button type="button" class="menu-open-btn" data-menu-open>
+    <svg class="open" width="32" height="22">
+        <use href="./images/icons.svg#icon-hamburge-menur"></use>
+    </svg>
+</button>
+</div>
+<div class="mob-menu is-hidden"  data-menu>
+    <div>
+    <button type="button" class="menu-close-btn" data-menu-close>
+        <svg class="close-x" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+        </svg>
+    </button>
+    <ul class="mob-menu-list list">
+        <li class="mob-menu-item"> <a class="mob-menu-link  link" href="./index.html">Studio</a> </li>
+        <li class="mob-menu-item"> <a class="mob-menu-link current link" href="./portfolio.html">Portfolio</a></li>
+        <li class="mob-menu-item"> <a class="mob-menu-link link" href=""> Contacts</a></li>
+    </ul>
+</div>
+<div>   
+<address class="mob-menu-address">
+        <ul class="mob-menu-list list">
+            <li class="mob-menu-item"><a class="mob-menu-phone link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+        <li class="mob-menu-item"><a class="mob-menu-contact link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+       
+        </ul>
+    </address>
+    <div class="mob-soc-list">
+        <ul class="mob-menu-soc-list list">
+            <li class="mob-menu-social">
+                <a class="mob-menu-soc-link link" href="">
+                    <svg class="mob-menu-social-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-instagram-2"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="mob-menu-social">
+                <a class="mob-menu-soc-link link" href="">
+                    <svg class="mob-menu-social-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-twitter-1"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="mob-menu-social">
+                <a class="mob-menu-soc-link link" href="">
+                    <svg class="mob-menu-social-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-facebook-1"></use>
+                    </svg>
+                </a>
+            </li>
+        <li class="mob-menu-social">
+                <a class="mob-menu-soc-link link" href="">
+                    <svg class="mob-menu-social-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-linkedin-1"></use>
+                    </svg>
+                </a>
+            </li>    
+        </ul>
+    </div>      
 </div>
     </header>
     <main>
@@ -156,12 +216,13 @@
     </main>
     <footer class="footer">
         <div class="container footer-container">
-            <div>
+            <div class="footer-tablet">
+            <div class="footer-first">
         <a class="footer-logo link" href="./index.html">Web<span class="studio-color">Studio</span></a>  
                 <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
             </div>
             <div class="footer-wrap">
-                <p class="social-media">Social media</p>
+                <h3 class="social-media">Social media</h3>
                 <ul class="social-media-list list">
                     <li class="footer-social">
                         <a class="footer-social-link link" href="">
@@ -193,20 +254,20 @@
                     </li>    
                 </ul>
             </div>
+            </div>
             <div class="footer-subscribe">
                 <p class="subscribe-text">Subscribe</p>
                 <form class="subscribe-form">
                     <input class="subscribe-email" type="email" name="email" name="email" placeholder="E-mail">
-                    <button type="submit" class="subscribe-button">
-                        <span class="subscribe-button-text">Subscribe
+                    <button type="submit" class="subscribe-button">Subscribe
                             <svg class="subscribe-icon" width="24" height="24">
                                 <use href="./images/icons.svg#icon-Frame-3-1"></use>
                             </svg>
-                    </span>
                     </button>
                 </form>
             </div>
         </div>   
-    </footer>   
+    </footer>
+    <script src="./js/mobile-menu.js" type="module"></script>   
 </body>
 </html>

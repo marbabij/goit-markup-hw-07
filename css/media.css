@@ -24,6 +24,13 @@
         width: 768px;
         padding-right: 15px;
         padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+       
+    }
+    .second>.container{
+        padding-right: 16px;
+        padding-left: 16px;
     }
     .first{
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),url(../images/people-office-desk.jpg);
@@ -36,15 +43,14 @@
         url(../images/people-office-desk2.jpg);
   }
 }
-    .second{
-        width: 736px;
-    }
+   
     .menu-open-btn{
         display: none;
     }
 
     .header{
         display: flex;
+        height: 72px;
        
        
     }
@@ -82,10 +88,12 @@
     .adress-colons {
        display: flex;
        flex-direction: column;
+       gap: 12px;
+       margin-right: 16px;
 
     }
     .colons{
-        margin-bottom: 12px;
+        margin-bottom: 0;
     }
     .header-list{
         margin-left: 120px;
@@ -121,6 +129,25 @@
        border-radius: 2px;
        top: 24px;   
     }
+    .button-list{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 24px;
+    }
+    .btn{
+
+    }
+    .picture-list{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+        justify-content: start;
+    }
+    .picture-item{
+        width: calc((100% - 24px)/2);
+    }
     .first-tittle{
         width: 496px;
         font-weight: 700;
@@ -134,8 +161,11 @@
         margin-left: auto;   
     }
     .second{
-        display:flex;
-        flex-wrap: wrap;
+        margin-right: auto;
+        margin-left: auto;
+        /* display:flex;
+        flex-wrap: wrap; */
+
     }
     
     .second-list{
@@ -146,8 +176,11 @@
         flex-wrap: wrap;
         margin: 0;
     }
+    .second-item:not(:last-child){
+        margin-bottom: 0;
+    }
     .second-item{
-        flex-basis: calc((100%-24px)/2);
+        flex-basis: calc((100% - 24px) / 2);
         margin: 0;
         /* display: flex;
       width: 356px;
@@ -158,6 +191,7 @@
    
     .second-category {
         text-align: left;
+        
     }
     .second-text{
         margin-bottom: 0;
@@ -176,15 +210,15 @@
     .customers-list{
         display: flex;
         flex-wrap: wrap;
-        gap: 24px;
+        gap: 72px 24px;
         
     }
     .customers-item{
-        width: calc((100% - 48px)/3);
+        width: calc((100% - 48px) / 3);
     }
     .footer>.container{
-        margin-left: 108px; 
-       
+        width: 582px;
+               
     }
     .footer-first{
         text-align: left;
@@ -199,14 +233,17 @@
     .footer-text{
         text-align: left;
         width: 264px;
-        height: 112px;
+        height: 72px;
     }
     .footer-wrap{
        margin-left: 24px;
-        margin-top: -70px;
+        margin-top: -35px;
     }
     .social-media{
         text-align: left;
+    }
+    .footer-subscribe{
+        margin-left: 20px;
     }
 .subscribe-form{
     display: flex;
@@ -249,18 +286,32 @@ transition: background-color (var(--main-transition));
     .container{
         width: 1158px;
     }
+
     .header{
-              border-bottom: 1px solid #E7E9FC;}
+        width: 1158px;
+          border-bottom: 1px solid #E7E9FC;
+          margin-right: auto;
+          margin-left: auto;}
     .header-container{
         display: flex;
         align-items: center;
+        height: 72px;
+        margin-right: auto;
+        margin-left: auto;
         
+    }
+    .header-list{
+        margin-left: 0px;
+        margin-right: 0px;
     }
     .header-navigation{
         display: flex;
         align-items: center;
-        margin-right: auto;
+        
     
+    }
+    .adress-colons{
+        margin-right: 0px;
     }
     .header-link:hover{
     color: var(--focus-hover-color);
@@ -274,7 +325,7 @@ transition: background-color (var(--main-transition));
     }
     .header-logo  {
         font-family: 'Raleway', sans-serif;
-    font-weight: 800px;
+    font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
     display: flex;
@@ -283,7 +334,8 @@ transition: background-color (var(--main-transition));
     text-transform: uppercase;
     color:var(--third-tittle-color);
     text-decoration: none;
-    margin-right: 76px;
+    margin-right: 76px; 
+    
     }
     .header-list{
         display: flex;
@@ -297,6 +349,7 @@ transition: background-color (var(--main-transition));
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text-color);
+    margin-right: 0;
      }
      .header-item:last-child{
         margin-right: 0;
@@ -326,6 +379,7 @@ transition: background-color (var(--main-transition));
     
        
     }
+
     .adress-colons {
        flex-direction: row;
        gap: 40px;
@@ -336,6 +390,7 @@ transition: background-color (var(--main-transition));
         align-items: center;
         flex-wrap: nowrap;
         flex-direction: unset;
+        
     }
     .header-contact {
         font-weight: 400;
@@ -352,6 +407,9 @@ transition: background-color (var(--main-transition));
     .header-contact:focus{
         color: var(--focus-hover-color);
     }
+    .picture-item{
+        width: calc((100% - 48px) / 3);
+    }
     
     .first-tittle{
         width: 496px;
@@ -367,7 +425,7 @@ transition: background-color (var(--main-transition));
         margin-bottom: 48px; 
     }  
     .second>.container{
-        width: 1158px;
+        width: 1128px;
     }
     .fifth>.container{
         width: 1158px; 
@@ -385,7 +443,7 @@ transition: background-color (var(--main-transition));
         padding-bottom: 120px;  
     }
     .second-list{
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         gap: 24px;
     }
     .second-item{
@@ -400,7 +458,7 @@ transition: background-color (var(--main-transition));
     }
     .second-text {
         align-items: start;
-        font-weight: 400px;
+        font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     }
@@ -447,7 +505,8 @@ transition: background-color (var(--main-transition));
     .footer-wrap{
         margin-left: 120px;}
     .footer-subscribe{
-        margin-left: auto;
+        margin-left: 80px;
+        margin-top: 0;
     }
     .subscribe-text {
         font-weight: 500;
